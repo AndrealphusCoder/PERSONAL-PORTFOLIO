@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+body {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  font-size: 35px;
+}
+/* Style the navigation menu */
+#navbar {
+  position: fixed;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+}
+p {
+  font-size: 25px;
+}
+#welcome-section {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#projects {
+  height: 500px;
+  text-align: center;
+}
+#projects > h1 > a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+#welcome-section::before {
+  content: "";
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/27/14/31/astronomy-2179083_1280.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #000000;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #myLinks {
+    display: none;
+  }
+}
